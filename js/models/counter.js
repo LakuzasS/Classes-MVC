@@ -1,6 +1,19 @@
-let counter = 0;
+export class Counter {
+    #value;
 
-export function getCounter() {
-    return counter
+    constructor() {
+        this.#value = 0;
+    }
+
+    getValue() {
+        return this.#value;
+    }
+
+    incrementValue() {
+        this.#value++;
+    }
+
+    decrementValue() {
+        this.#value--;
+    }
 }
-
